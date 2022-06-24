@@ -38,6 +38,7 @@ class _LayoutState extends State<Layout> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: Colors.red[700],
         title: const Text("Weather Forecast"),
@@ -220,8 +221,8 @@ class _LayoutState extends State<Layout> {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Text(
-                              "${weekday[(4 + index) % 7]}",
-                              style: TextStyle(
+                              weekday[(4 + index) % 7],
+                              style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 26,
                               ),
@@ -231,15 +232,15 @@ class _LayoutState extends State<Layout> {
                               children: [
                                 Text(
                                   "${5 + Random().nextInt(5)} °F ",
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     fontSize: 32,
                                     color: Colors.white,
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   height: 60,
                                 ),
-                                Icon(
+                                const Icon(
                                   Icons.wb_sunny,
                                   color: Colors.white,
                                   size: 40,
