@@ -1,7 +1,7 @@
 import 'package:html/parser.dart' show parse;
 // import 'package:html/dom.dart';
 import 'package:http/http.dart' as http;
-import "constants.dart";
+import "utils/constants.dart";
 
 void main() async {
   var response = await http.get(Uri.parse("https://pogoda.uz/${locations[2]}"));

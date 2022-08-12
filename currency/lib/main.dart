@@ -347,7 +347,7 @@ class _ComparePageState extends State<ComparePage> {
                     ClipRRect(
                       borderRadius: BorderRadius.circular(10),
                       child: SvgPicture.asset(
-                        'assets/${model?.pathIcon}.svg',
+                        'assets/flags/${model?.pathIcon}.svg',
                         height: 20,
                         width: 20,
                       ),

@@ -7,9 +7,9 @@ import 'package:flutter/material.dart';
 // import 'package:weather/weekday_weather_model.dart';
 // import 'package:weather/load_data.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:weather/weather_model.dart';
+import 'package:weather/models/weather_model.dart';
 import 'package:weather/weather_page.dart';
-import 'package:weather/weekly_model.dart';
+import 'package:weather/models/weekly_model.dart';
 
 void main(List<String> args) async{
 await Hive.initFlutter();

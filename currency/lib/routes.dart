@@ -1,4 +1,4 @@
-import 'package:currency_app/currency_page.dart';
+import 'package:currency/currency_page.dart';
 import 'package:flutter/material.dart';
 import 'main.dart';
 // import 'package:lesson1/nft_ui/auction_page.dart';
@@ -17,20 +17,16 @@ class Routes {
       args ?? <String, dynamic>{};
       switch (routeSettings.name) {
         case currencyPage:
-          return MaterialPageRoute(
-              builder: (context) =>
-                  CurrencyPage(args?['top_cur'], args?['bottom_Cur']));
+          return MaterialPageRoute(builder: (context) => const CurrencyPage());
         // case auctionPage:
         //   return MaterialPageRoute(builder: (context) => const AuctionPage());
         // case discoverPage:
         //   return MaterialPageRoute(builder: (context) => DiscoverPage(args?['title'] ?? ''));
         default:
-          return MaterialPageRoute(
-              builder: (context) =>
-                  CurrencyPage(args?['top_cur'], args?['bottom_Cur']));
+          return MaterialPageRoute(builder: (context) => const CurrencyPage());
       }
     } catch (e) {
-      return MaterialPageRoute(builder: (context) => ComparePage());
+      return MaterialPageRoute(builder: (context) => const ComparePage());
     }
   }
 }

@@ -109,7 +109,7 @@ class _CurrencyPageState extends State<CurrencyPage> {
                 },
                 child: ListTile(
                   leading: SvgPicture.asset(
-                    'assets/${list[index].name.toString().substring(0, 2).toLowerCase()}.svg',
+                    'assets/flags/${list[index].name.toString().substring(0, 2).toLowerCase()}.svg',
                     width: 25,
                     height: 25,
                   ),

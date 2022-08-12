@@ -4,11 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:html/parser.dart';
 import 'package:http/http.dart';
 import 'package:intl/intl.dart';
-import 'package:weather/hive_util.dart';
-import 'package:weather/weather_model.dart';
-import 'package:weather/weekly_model.dart';
-import 'package:weather/constants.dart';
-
+import 'package:weather/utils/hive_util.dart';
+import 'package:weather/models/weather_model.dart';
+import 'package:weather/models/weekly_model.dart';
+import 'package:weather/utils/constants.dart';
 
 class WeatherPage extends StatefulWidget {
   const WeatherPage({Key? key}) : super(key: key);
@@ -445,7 +444,7 @@ class InfoItem extends StatelessWidget {
     return Row(
       children: [
         Image.asset(
-          'assets/info/$icon.png',
+          'assets/$icon.png',
           height: 25,
           width: 25,
         ),
@@ -503,7 +502,7 @@ class WaetherMainBox extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(top: 116),
                   child: Text(
-                    'Ясно asda das dasdadsadas',
+                    'Ясно',
                     style: kTextStyle(size: 24, fontWeight: FontWeight.w700),
                   ),
                 ),
